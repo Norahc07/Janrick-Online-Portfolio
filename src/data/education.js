@@ -1,0 +1,38 @@
+export const education = [
+  {
+    id: 'tertiary',
+    level: 'Tertiary Education',
+    institution: 'Pambayang Kolehiyo ng Mauban',
+    detail: 'Bachelor of Secondary Education Major in English',
+    status: 'Second Year',
+    period: '2025 – Present',
+    current: true,
+  },
+  {
+    id: 'senior-high',
+    level: 'Senior High School',
+    institution: 'Colegio de Sta. Rita (Cam.Sur) Foundation Inc.',
+    detail: null,
+    status: null,
+    period: '2021 – 2024',
+    current: false,
+  },
+  {
+    id: 'junior-high',
+    level: 'Junior High School',
+    institution: 'Colegio de Sta. Rita (Cam.Sur) Foundation Inc.',
+    detail: null,
+    status: null,
+    period: '2017 – 2021',
+    current: false,
+  },
+  {
+    id: 'elementary',
+    level: 'Elementary Education',
+    institution: 'Sabang Elementary School',
+    detail: null,
+    status: null,
+    period: '2011 – 2017',
+    current: false,
+  },
+];
