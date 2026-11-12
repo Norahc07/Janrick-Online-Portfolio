@@ -68,16 +68,12 @@ export default function Resume() {
 
   return (
     <div className="page resume-page">
-      <div className="container">
-        <div className="page-hero page-hero--split" data-reveal>
-          <div>
-            <p className="section-label">01 — Resume</p>
-            <h1 className="serif">My resume</h1>
-            <p>
-              A concise academic resume based on verified student information.
-            </p>
-          </div>
-          <div className="resume-actions no-print" data-reveal data-reveal-delay="1">
+      <div className="content-shell">
+        <header className="content-hero" data-reveal>
+          <p className="section-label">01 — Resume</p>
+          <h1 className="serif">My resume</h1>
+          <p>A concise academic resume based on verified student information.</p>
+          <div className="content-hero__actions no-print" data-reveal data-reveal-delay="1">
             <Button
               variant="primary"
               onClick={handlePrint}
@@ -97,7 +93,7 @@ export default function Resume() {
               {isDownloading ? 'Downloading…' : 'Download Resume PDF'}
             </Button>
           </div>
-        </div>
+        </header>
 
         <article className="resume panel" id="resume-document" data-reveal data-reveal-delay="2">
           <header className="resume__header">
@@ -183,11 +179,6 @@ export default function Resume() {
       </div>
 
       <style>{`
-        .resume-actions {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.75rem;
-        }
         .resume {
           box-shadow: none;
         }
@@ -372,7 +363,7 @@ export default function Resume() {
           .scroll-top,
           .offline-banner,
           .no-print,
-          .page-hero {
+          .content-hero {
             display: none !important;
           }
           .main-content {

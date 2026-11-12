@@ -5,17 +5,15 @@ export default function Purpose() {
 
   return (
     <div className="page">
-      <div className="container">
-        <div className="page-hero" data-reveal>
+      <div className="content-shell">
+        <header className="content-hero" data-reveal>
           <p className="section-label">03 — Purpose</p>
           <h1 className="serif">Purpose of this portfolio</h1>
-          <p>
-            Why this TTL 1 online portfolio was created and what it aims to show.
-          </p>
-        </div>
+          <p>Why this TTL 1 online portfolio was created and what it aims to show.</p>
+        </header>
 
-        <div className="purpose-layout">
-          <article className="prose" data-reveal data-reveal-delay="1">
+        <div className="content-stack">
+          <article className="content-body" data-reveal data-reveal-delay="1">
             {purpose.paragraphs.map((paragraph, index) => (
               <p key={index} className={index === 0 ? 'lead' : undefined}>
                 {paragraph}
@@ -38,14 +36,17 @@ export default function Purpose() {
       </div>
 
       <style>{`
-        .purpose-layout {
-          display: grid;
-          gap: var(--space-7);
+        .purpose-goals {
+          max-width: 40rem;
+          margin: 0 auto;
+          width: 100%;
+          text-align: left;
         }
         .purpose-goals h2 {
           font-size: clamp(1.4rem, 2.5vw, 1.8rem);
           margin-bottom: 1.25rem;
           letter-spacing: -0.02em;
+          text-align: center;
         }
         .purpose-goals ol {
           display: grid;
@@ -65,13 +66,6 @@ export default function Purpose() {
           color: var(--accent);
           font-weight: 600;
           padding-top: 0.2rem;
-        }
-        @media (min-width: 960px) {
-          .purpose-layout {
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 3rem;
-            align-items: start;
-          }
         }
       `}</style>
     </div>
