@@ -40,7 +40,7 @@ export default function Purpose() {
           max-width: 40rem;
           margin: 0 auto;
           width: 100%;
-          text-align: left;
+          text-align: center;
         }
         .purpose-goals h2 {
           font-size: clamp(1.4rem, 2.5vw, 1.8rem);
@@ -51,6 +51,7 @@ export default function Purpose() {
         .purpose-goals ol {
           display: grid;
           gap: 1rem;
+          text-align: left;
         }
         .purpose-goals li {
           display: grid;
@@ -66,6 +67,16 @@ export default function Purpose() {
           color: var(--accent);
           font-weight: 600;
           padding-top: 0.2rem;
+        }
+        @media (max-width: 767px) {
+          .purpose-goals ol {
+            text-align: center;
+          }
+          .purpose-goals li {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 0.35rem;
+          }
         }
       `}</style>
     </div>

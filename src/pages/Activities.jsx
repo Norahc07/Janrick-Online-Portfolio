@@ -29,7 +29,7 @@ export default function Activities() {
 
   return (
     <div className="page">
-      <div className="content-shell">
+      <div className="content-shell content-shell--wide">
         <header className="content-hero" data-reveal>
           <p className="section-label">04 — Accomplished Activities</p>
           <h1 className="serif">Accomplished Activities</h1>
@@ -84,7 +84,8 @@ export default function Activities() {
           display: flex;
           flex-direction: column;
           gap: 0.85rem;
-          align-items: stretch;
+          align-items: center;
+          width: 100%;
         }
         .search-field {
           display: flex;
@@ -96,7 +97,6 @@ export default function Activities() {
           background: var(--bg-secondary);
           width: 100%;
           max-width: 28rem;
-          margin-inline: auto;
         }
         .search-field svg {
           color: var(--accent);
@@ -115,10 +115,17 @@ export default function Activities() {
         .library-grid {
           display: grid;
           gap: 1rem;
+          width: 100%;
+          grid-template-columns: 1fr;
         }
         @media (min-width: 700px) {
           .library-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+        @media (min-width: 1024px) {
+          .library-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
           }
         }
       `}</style>

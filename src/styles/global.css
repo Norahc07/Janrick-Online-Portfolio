@@ -406,11 +406,21 @@ ol {
 }
 
 .content-shell {
-  width: min(100% - 2rem, 52rem);
+  width: 100%;
+  max-width: 52rem;
   margin-inline: auto;
+  padding-inline: 1rem;
+  box-sizing: border-box;
+}
+
+.content-shell--wide {
+  max-width: 70rem;
 }
 
 .content-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: var(--space-7);
   padding-bottom: var(--space-6);
@@ -424,15 +434,18 @@ ol {
 
 .content-hero h1 {
   font-family: var(--font-serif);
-  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  font-size: clamp(2rem, 6vw, 3.2rem);
   font-weight: 600;
   letter-spacing: -0.02em;
-  margin-bottom: 0.85rem;
+  margin: 0 0 0.85rem;
+  max-width: 100%;
+  text-wrap: balance;
 }
 
 .content-hero p {
   margin: 0 auto;
   max-width: 34rem;
+  width: 100%;
   color: var(--text-secondary);
   font-size: 1.05rem;
   line-height: 1.7;
@@ -444,11 +457,13 @@ ol {
   justify-content: center;
   gap: 0.75rem;
   margin-top: 1.35rem;
+  width: 100%;
 }
 
 .content-stack {
   display: grid;
   gap: var(--space-7);
+  width: 100%;
 }
 
 .content-body {
@@ -456,6 +471,8 @@ ol {
   gap: 1.35rem;
   margin: 0 auto;
   max-width: 40rem;
+  width: 100%;
+  text-align: center;
 }
 
 .content-body p {
@@ -468,6 +485,12 @@ ol {
 .content-body .lead {
   color: var(--text-primary);
   font-size: 1.14rem;
+}
+
+@media (min-width: 768px) {
+  .content-body {
+    text-align: left;
+  }
 }
 
 .page-hero {
