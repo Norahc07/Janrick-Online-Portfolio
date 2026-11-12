@@ -131,7 +131,7 @@ export default function Navbar() {
           height: 100%;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-end;
           gap: 1rem;
         }
         .navbar__toggle {
@@ -140,6 +140,7 @@ export default function Navbar() {
           justify-content: center;
           width: 2.75rem;
           height: 2.75rem;
+          margin-left: auto;
           border: 1px solid var(--border);
           border-radius: var(--radius-sm);
           background: var(--bg-secondary);
@@ -242,6 +243,9 @@ export default function Navbar() {
         }
 
         @media (min-width: 1024px) {
+          .navbar__inner {
+            justify-content: center;
+          }
           .navbar__toggle,
           .menu-page {
             display: none !important;
