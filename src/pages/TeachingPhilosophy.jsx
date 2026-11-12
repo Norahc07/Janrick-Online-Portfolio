@@ -7,7 +7,6 @@ export default function TeachingPhilosophy() {
     <div className="page">
       <div className="content-shell">
         <header className="content-hero" data-reveal>
-          <p className="section-label">02 — Teaching Principles</p>
           <h1 className="serif">Teaching Principles</h1>
           <p>A statement of the values and approaches that guide this future educator.</p>
         </header>

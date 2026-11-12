@@ -1,12 +1,13 @@
 :root {
-  --bg-primary: #f3f3f4;
-  --bg-secondary: #ffffff;
-  --text-primary: #1c1d1f;
-  --text-secondary: #5f6368;
-  --surface-dark: #2b2d31;
-  --border: #e4e5e7;
-  --muted: #9aa0a6;
-  --accent: #6f7378;
+  --bg-primary: #0b0d12;
+  --bg-secondary: #14161e;
+  --text-primary: #f5f5f4;
+  --text-secondary: #9a9eaa;
+  --surface-dark: #e8b84a;
+  --on-accent: #0b0d12;
+  --border: #2c303c;
+  --muted: #6e7380;
+  --accent: #e8b84a;
 
   --font-sans: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-serif: 'Playfair Display', 'Times New Roman', Times, serif;
@@ -21,19 +22,19 @@
   --space-8: 4.5rem;
   --space-9: 6rem;
 
-  --radius-sm: 6px;
+  --radius-sm: 8px;
   --radius-md: 10px;
   --radius-lg: 14px;
 
-  --shadow-sm: 0 1px 2px rgba(28, 29, 31, 0.03);
-  --shadow-md: 0 10px 28px rgba(28, 29, 31, 0.05);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
 
   --nav-height: 4rem;
   --container: 70rem;
   --content-measure: 42rem;
 
   --transition: 180ms ease;
-  --focus-ring: 0 0 0 3px rgba(43, 45, 49, 0.2);
+  --focus-ring: 0 0 0 3px rgba(232, 184, 74, 0.35);
 }
 
 @media (prefers-reduced-motion: reduce) {

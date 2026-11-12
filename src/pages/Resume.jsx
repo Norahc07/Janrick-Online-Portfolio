@@ -70,7 +70,6 @@ export default function Resume() {
     <div className="page resume-page">
       <div className="content-shell">
         <header className="content-hero" data-reveal>
-          <p className="section-label">01 — Resume</p>
           <h1 className="serif">My resume</h1>
           <p>A concise academic resume based on verified student information.</p>
           <div className="content-hero__actions no-print" data-reveal data-reveal-delay="1">

@@ -7,7 +7,6 @@ export default function Purpose() {
     <div className="page">
       <div className="content-shell">
         <header className="content-hero" data-reveal>
-          <p className="section-label">03 — Purpose</p>
           <h1 className="serif">Purpose of this portfolio</h1>
           <p>Why this TTL 1 online portfolio was created and what it aims to show.</p>
         </header>

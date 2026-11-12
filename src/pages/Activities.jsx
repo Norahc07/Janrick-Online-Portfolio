@@ -31,7 +31,6 @@ export default function Activities() {
     <div className="page">
       <div className="content-shell content-shell--wide">
         <header className="content-hero" data-reveal>
-          <p className="section-label">04 — Accomplished Activities</p>
           <h1 className="serif">Accomplished Activities</h1>
           <p>A clean library of registered PDF activities and academic documents.</p>
         </header>

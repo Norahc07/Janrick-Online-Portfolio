@@ -134,6 +134,7 @@ export default function Home() {
           letter-spacing: -0.03em;
           line-height: 1.05;
           margin-bottom: 0.65rem;
+          color: var(--text-primary);
         }
         .hero__name {
           font-size: 0.84rem;
@@ -142,6 +143,9 @@ export default function Home() {
           font-weight: 600;
           color: var(--accent);
           margin-bottom: 1.35rem;
+        }
+        .hero .section-label {
+          color: var(--accent);
         }
         .hero__desc {
           font-size: 1.08rem;

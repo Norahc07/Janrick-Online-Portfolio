@@ -118,14 +118,15 @@ export default function Navbar() {
           inset: 0 0 auto 0;
           z-index: 80;
           height: var(--nav-height);
-          background: rgba(245, 245, 245, 0.97);
+          background: rgba(11, 13, 18, 0.92);
+          backdrop-filter: blur(10px);
           border-bottom: 1px solid transparent;
           transition: border-color var(--transition), background var(--transition);
         }
         .navbar--scrolled,
         .navbar--menu-open {
           border-bottom-color: var(--border);
-          background: #fff;
+          background: rgba(11, 13, 18, 0.98);
         }
         .navbar__inner {
           height: 100%;
@@ -167,8 +168,8 @@ export default function Navbar() {
         }
         .navbar__link:hover,
         .navbar__link.is-active {
-          color: var(--text-primary);
-          background: rgba(32, 33, 36, 0.04);
+          color: var(--accent);
+          background: rgba(232, 184, 74, 0.08);
         }
         .navbar__link.is-active {
           position: relative;
@@ -180,7 +181,7 @@ export default function Navbar() {
           right: 0.75rem;
           bottom: 0.2rem;
           height: 1px;
-          background: var(--surface-dark);
+          background: var(--accent);
         }
 
         .menu-page {

@@ -82,7 +82,7 @@ export default function Journey() {
         .timeline__item.is-current .timeline__icon {
           background: var(--surface-dark);
           border-color: var(--surface-dark);
-          color: #fff;
+          color: var(--on-accent);
         }
         .timeline__line {
           width: 1px;
